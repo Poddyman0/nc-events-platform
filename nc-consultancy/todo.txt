@@ -1,0 +1,45 @@
+
+front end:
+ 
+- mobile responsive
+- tests (jest)
+
+- event (can have multiple dates)
+- tickets (multiple types and prices for a event)
+
+
+
+back end:
+- users - CRUD
+- events - CRUD
+
+tie together back end and front end:
+endpoints:
+`profile/post` - sign up.
+`profile/put/${profileIDSignedIn}/signin` - signIn (inc errors)
+`profile/get/${profileEmail}/${profilePassword}/signin` - signIn (inc errors)
+`profile/get/${profileIDSignedIn}/profileupdate`- profileUpdate 
+`profile/put/${profileIDSignedIn}/profileupdate` - profileUpdate 
+
+`profile/get/${profileIDSignedIn}/profile` 
+`profile/delete/${profileIDSignedIn}`
+`profile/put/${profileIDSignedIn}/profile`  
+
+`event/get/${eventIDToView}/eventupdate`  
+`event/put/${eventIDToView}/eventupdate` 
+`events/get` 
+`event/get/${eventIDToView}/aevent` 
+`event/delete/${eventIDToView}` 
+`/event/post`
+
+
+- delete event (internal, if owner)
+- delete profile (if owner).
+
+- update profile (if owner)
+- create event (internal, if owner)
+- update event (internal if owner)
+- read event
+
+
+
